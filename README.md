@@ -88,34 +88,40 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    $ sudo nano .bashrc
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133682833-84a33b24-38ec-42ef-8edb-277736b96bad.png" width="500" hight="300"> 
+
    ```
    $ source ~/.bashrc
    ```
+   <img src="https://user-images.githubusercontent.com/90856580/133682895-eeda5325-38dd-458c-a4c6-3aab782c3bda.png" width="500" hight="300"> 
 
 
    ──► Edición del archivo hadoop-env.sh.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133682934-535f3d1c-71f7-4606-952c-f01f9b68c7ce.png" width="500" hight="300"> 
+
    
    ──► Edición del archivo core-site.xml.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml  
    ```
-   
+    <img src="https://user-images.githubusercontent.com/90856580/133682973-16944e8a-a86e-46e4-b03d-9a7bf0780951.png" width="500" hight="300"> 
+
    
    ──► Edición del archivo hdfs-site.xml.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133683002-9306b943-b366-4dbf-abcc-0fee0ad59d22.png" width="500" hight="300"> 
+
    ```
    $ sudo mkdir /home/hdoop/dfsdata/namenode
    $ sudo mkdir /home/hdoop/dfsdata/datanode
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133683024-94ddd5e5-a759-4e7d-9b0b-90e82aa0da8d.png" width="500" hight="300"> 
+
    
    ──► Edición del archivo mapred-site.xml.
    ```

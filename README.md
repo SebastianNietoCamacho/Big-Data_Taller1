@@ -33,8 +33,6 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    $ sudo apt update 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133662178-63bd359b-c122-4c6b-a763-904f6b95fede.png" width="500" hight="300"> 
-   
-   
    ```
    $ sudo apt install openjdk-8-jdk -y 
    ```
@@ -165,3 +163,38 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    http://localhost:8088 
    ```
+
+
+PARTE DOS
+
+MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmenes de datos de manera distribuida y escalable.
+
+1. Una vez instalado Hadoop, se hace uso de la guía oficial de Apache: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html, en su sección de "Execution" para seguir los pasos del 4 al 7 con el fin de ejecutar un programa de ejemplo.
+
+   ```
+   $ bin/hdfs dfs -mkdir /user
+   $ bin/hdfs dfs -mkdir /user/<username>
+   ```
+   
+   ```
+   $ bin/hdfs dfs -mkdir input
+   $ bin/hdfs dfs -put etc/hadoop/*.xml input
+   ```
+   
+   ```
+   $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar grep input output 'dfs[a-z.]+'
+   ```
+   ![image](https://user-images.githubusercontent.com/90856580/133679956-d7eb037f-0a0d-46de-a50b-aa6c98a8a6f5.png)
+
+   ```
+   $ bin/hdfs dfs -get output output
+   $ cat output/*
+   ```
+   ![image](https://user-images.githubusercontent.com/90856580/133680013-8dd45d09-f777-4bdf-b5e4-d84da1ebc996.png)
+
+
+
+   
+
+
+

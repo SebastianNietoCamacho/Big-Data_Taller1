@@ -26,5 +26,12 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    $ cp ~/.bashrc ~/.bashrc.bak    
    ```
       ![image](https://user-images.githubusercontent.com/90856580/133661619-692c7b24-20e8-423c-9fcb-0e483a1830ea.png)
+      
+   ──► Instalar OpenJDK en Ubuntu.
+   ```
+   $ sudo apt update 
+   $ sudo apt install openjdk-8-jdk -y 
+   $ java -version; javac -version
+   ```
 
 

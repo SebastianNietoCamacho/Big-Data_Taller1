@@ -224,7 +224,7 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
 
    <img src="https://user-images.githubusercontent.com/90856580/133687875-4c9bafe8-dbfd-421f-ac86-df0003a7d307.png" width="500" hight="300"> 
 
-   
+   RESPUESTA: la ejecución del programa grep, el cual está como ejemplo por defecto en los pasos 4 a 7 de la guía oficial de Apace para Hadoop, nos trae el conteo de las coincidencias que se encontraron en el archivo entrada que se le implementó; es decir, el programa hace uso de las expresiones regulares para escanear al archivo entrada y por salida evidencia cuántas coincidencias se encontraron con dicha regex establecida. Analizando el código fuente del software, se evidencia que la expresión regular estructurada es: 'dfs [az.]+'; además de que utiliza la propiedad length de un objeto String con el fin de obtener toda su longitud y así ir aumentando una variable contadora que registra el número de coincidencias obtenidas. Consultando un poco en la world wide web, se encontró que el programa toma la configuración de archivos como entrada del texto brindadno y tal vez por eso, desde una visión empírica, al poner dos archivos distintos, se siguen obteniendo las mismas salidas. Los pasos que utiliza el framework de Map-Reduce
 
 
 

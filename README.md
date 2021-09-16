@@ -224,7 +224,7 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
 
    <img src="https://user-images.githubusercontent.com/90856580/133687875-4c9bafe8-dbfd-421f-ac86-df0003a7d307.png" width="500" hight="300"> 
 
-   RESPUESTA: la ejecución del programa grep, el cual está como ejemplo por defecto en los pasos 4 a 7 de la guía oficial de Apace para Hadoop, nos trae el conteo de las coincidencias que se encontraron en el archivo entrada que se le implementó; es decir, el programa hace uso de las expresiones regulares para escanear al archivo entrada y por salida evidencia cuántas coincidencias se encontraron con dicha regex establecida. Analizando el código fuente del software, se evidencia que la expresión regular estructurada es: 'dfs [az.]+'; además de que utiliza la propiedad length de un objeto String con el fin de obtener toda su longitud y así ir aumentando una variable contadora que registra el número de coincidencias obtenidas. Consultando un poco en la world wide web, se encontró que el programa toma la configuración de archivos como entrada del texto brindadno y tal vez por eso, desde una visión empírica, al poner dos archivos distintos, se siguen obteniendo las mismas salidas. Los pasos que utiliza el framework de Map-Reduce son el registro de entradas, una salidad de entradas, salidad de bytes, salida materializada de bytes, entreda dividida de bytes, registros de combinación para entrada y salida, reducción de los grupos de entrada, reducción de la baraja de bytes, reducción para los registros de entrada y salida, derrame de registros, mapas barajados, barajas fallidas, salidas de mapas fusionados, y finalmente se evidencian rgistros de temas relacionados al hardware como la memoria física, memoria virtual, tiempos de la CPU, entre otros.
+   RESPUESTA: la ejecución del programa grep, el cual está como ejemplo por defecto en los pasos 4 a 7 de la guía oficial de Apace para Hadoop, nos trae el conteo de las coincidencias que se encontraron en el archivo entrada que se le implementó; es decir, el programa hace uso de las expresiones regulares para escanear al archivo entrada y por salida evidencia cuántas coincidencias se encontraron con dicha regex establecida. Analizando el código fuente del software, se evidencia que la expresión regular estructurada es: 'dfs [az.]+'; además de que utiliza la propiedad length de un objeto String con el fin de obtener toda su longitud y así ir aumentando una variable contadora que registra el número de coincidencias obtenidas. Consultando un poco en la world wide web, se encontró que el programa toma la configuración de archivos de Hadoop y tal vez por eso, desde una visión empírica, al poner dos archivos distintos, se siguen obteniendo las mismas salidas. Los pasos que utiliza el framework de Map-Reduce son el registro de entradas, una salidad de entradas, salidad de bytes, salida materializada de bytes, entreda dividida de bytes, registros de combinación para entrada y salida, reducción de los grupos de entrada, reducción de la baraja de bytes, reducción para los registros de entrada y salida, derrame de registros, mapas barajados, barajas fallidas, salidas de mapas fusionados, y finalmente se evidencian rgistros de temas relacionados al hardware como la memoria física, memoria virtual, tiempos de la CPU, entre otros.
 
 
 
@@ -232,10 +232,110 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
 
    ■ ¿Qué resultados genera el programa y cuáles son los pasos que MapReduce implementa? ■
    
+   <img src="https://user-images.githubusercontent.com/90856580/133694927-4392ee4d-7ee2-4971-8669-8f53c6d4faed.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133694722-7858d930-d152-4cf3-9c38-843944c2e0c6.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133694768-81ad3cb2-aad8-4339-81e5-2287c69223c6.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133694823-ae44b39a-66ce-4391-8a8b-511458bdc7dc.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133695156-bd07307e-60ce-4ec5-97fc-24935258fa6c.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133695199-e24054f5-21a8-4830-8a51-bac2a2c09f17.png" width="500" hight="300"> 
+
+
+
+   
    RESPUESTA: 
+   
+   
 
 
+PARTE TRES
 
+En los últimos años, Spark ha ganado una importante popularidad respecto a Hadoop/MapReduce para procesamiento distribuido de datos. La clave de Spark es su procesamiento en memoria. También tiene la ventaja de que puede ser programado en otros lenguajes más compactos como Scala, Python y R.
 
+1. A continuación se deben seguir los ejemplos de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/CIS612_SparkInstallation_Ubuntu.pdf, para la instalación de Spark en Ubuntu.
 
+   ──► Instalación de paquetes requeridos para Spark.
+   ```
+   $ sudo apt install scala git -y 
+   ```
 
+   ```
+   $ java -version; javac -version; scala -version; git --version
+   ```
+   
+   
+   ──► Descarga y configuración de Spark en Ubuntu.
+   ```
+   $ wget https://ftp.wayne.edu/apache/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz
+   ```
+
+   ```
+   $ tar xvf spark-* 
+   ```
+   
+   ```
+   $ sudo mv spark-3.0.1-bin-hadoop2.7 /opt/spark 
+   ```
+   
+   
+   ──► Configuración del entorno de Spark.
+   ```
+   $ nano .profile 
+   ```
+   
+   ```
+   $ source ~/.profile 
+   ```
+   
+   
+   ──► Iniciación del servidor maestro autónomo de Spark.
+   ```
+   $ start-master.sh
+   ```
+   
+   ```
+   http://127.0.0.1:8080/ 
+   ```
+   
+   
+   ──► Iniciar Spark Slave Server (Iniciar un proceso de trabajo).
+   ```
+   start-slave.sh spark://master:port
+   ```
+   
+   ```
+   $ start-slave.sh spark://yixi-virtualbox:7077 
+   ```
+   
+   ```
+   $ start-slave.sh -c 1 spark://yixi-virtualbox:7077 
+   ```
+   
+   ```
+   $ start-slave.sh -m 512M spark://yixi-virtualbox:7077 
+   ```
+   
+   
+   ──► Prueba Spark Shell.
+   ```
+   $ spark-shell 
+   ```
+   
+   ──► Prueba de Python in Spark.
+   ```
+   $ pyspark 
+   ```
+   
+   ──► Comandos básicos para iniciar y detener el servicio maestro.
+   ```
+   $ start-master.sh 
+   ```
+   
+   ```
+   $ stop-master.sh 
+   ```
+   
+   ```
+   $ stop-slave.sh
+   ```
+   
+  

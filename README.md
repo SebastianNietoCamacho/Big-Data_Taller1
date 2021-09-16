@@ -185,22 +185,28 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
    $ bin/hdfs dfs -mkdir /user
    $ bin/hdfs dfs -mkdir /user/<username>
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133685188-45ca5787-0294-426e-9c61-7113d9aceebe.png" width="500" hight="300"> 
+
+   <img src="https://user-images.githubusercontent.com/90856580/133685266-221152bf-a86b-4164-8eb2-bfdc0fd3b779.png" width="500" hight="300"> 
+
    ```
    $ bin/hdfs dfs -mkdir input
    $ bin/hdfs dfs -put etc/hadoop/*.xml input
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133685392-9f22f33b-35fc-4c20-a9c1-0d659277bdeb.png" width="500" hight="300"> 
+
+   <img src="https://user-images.githubusercontent.com/90856580/133685406-135f4482-a6fc-4287-88e7-367606477741.png" width="500" hight="300"> 
+
    ```
    $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar grep input output 'dfs[a-z.]+'
    ```
-   ![image](https://user-images.githubusercontent.com/90856580/133679956-d7eb037f-0a0d-46de-a50b-aa6c98a8a6f5.png)
+   <img src="https://user-images.githubusercontent.com/90856580/133679956-d7eb037f-0a0d-46de-a50b-aa6c98a8a6f5.png" width="500" hight="300"> 
 
    ```
    $ bin/hdfs dfs -get output output
    $ cat output/*
    ```
-   ![image](https://user-images.githubusercontent.com/90856580/133680013-8dd45d09-f777-4bdf-b5e4-d84da1ebc996.png)
+   <img src="https://user-images.githubusercontent.com/90856580/133680013-8dd45d09-f777-4bdf-b5e4-d84da1ebc996.png" width="500" hight="300"> 
 
 
 

@@ -208,6 +208,9 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133680013-8dd45d09-f777-4bdf-b5e4-d84da1ebc996.png" width="500" hight="300"> 
 
+Al ejecutar el programa ejemplo, se deben analizar los 'logs' que se muestran en consola; así como los archivos generados en la carpeta: output, y de igual forma resulta útil el análisis del código fuente del ejemplo.
+
+■ ¿Qué resultados generó el programa y cuáles son los pasos que MapReduce implementa? ■
 
 
    

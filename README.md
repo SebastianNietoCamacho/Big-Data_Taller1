@@ -33,14 +33,10 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    $ sudo apt update 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133662178-63bd359b-c122-4c6b-a763-904f6b95fede.png" width="500" hight="300"> 
-
-
    ```
    $ sudo apt install openjdk-8-jdk -y 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133663499-7761818b-2531-4867-8b91-d5d0fe1aaee4.png" width="500" hight="300"> 
-
-
    ```
    $ java -version; javac -version
    ```
@@ -59,8 +55,6 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    $ sudo adduser hdoop
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133668398-e222f05d-7ab0-479c-98ee-c7d77be749bb.png" width="500" hight="300"> 
-
-
    ```
    $ su - hdoop
    ```
@@ -72,8 +66,6 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669299-aac8d67c-c1ac-4ffa-a7e5-07b6e5db8a24.png" width="500" hight="300"> 
-
-
    ```
    $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
    $ chmod 0600 ~/.ssh/authorized_keys
@@ -81,90 +73,85 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669457-320c3b8d-14d9-423d-8347-870c67fff1ac.png" width="500" hight="300"> 
 
-   ──► Descargar e instalar Hadoop en Ubuntu.
 
+   ──► Descargar e instalar Hadoop en Ubuntu.
    ```
    $ wget [yourlink]
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669995-6cb09d59-c49b-4e49-ad2a-c121111cd409.png" width="500" hight="300"> 
-   
+  
+  
    ──► Configuración de variables del entorno de Hadoop (.ashrc).
-
    ```
    $ sudo nano .bashrc
    ```
-  
    ```
    $ source ~/.bashrc
    ```
-   
-   ──► Edición del archivo hadoop-env.sh.
 
+
+   ──► Edición del archivo hadoop-env.sh.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
    ```
    
-   ──► Edición del archivo core-site.xml.
    
+   ──► Edición del archivo core-site.xml.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml  
    ```
    
-   ──► Edición del archivo hdfs-site.xml.
    
+   ──► Edición del archivo hdfs-site.xml.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
    ```
-   
    ```
    $ sudo mkdir /home/hdoop/dfsdata/namenode
    $ sudo mkdir /home/hdoop/dfsdata/datanode
    ```
    
-   ──► Edición del archivo mapred-site.xml.
    
+   ──► Edición del archivo mapred-site.xml.
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671487-6203ff90-6502-4a47-8a68-f8d6e5098389.png" width="500" hight="300"> 
 
+
    ──► Edición del archivo yarn-site.xml.
-   
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671518-20de7cc5-e147-427d-85e6-c1801c1cd0d3.png" width="500" hight="300"> 
 
+
    ──► Formateo de HDFS NameNode.
-   
    ```
    $ hdfs namenode -format 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671661-3f65f35b-9d1c-4ee0-9a28-d78486154540.png" width="500" hight="300"> 
 
+
    ──► Iniciar el Cluster de Hadoop.
-   
    ```
    $ ./start-dfs.sh    
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671960-db319950-bee3-4853-9664-0958b66fb673.png" width="500" hight="300"> 
-
    ```
    $ ./start-yarn.sh 
    $ jps 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133672313-dd43a780-946d-4613-8e05-c36b683c3a09.png" width="500" hight="300"> 
    
-   ──► Acceder a la interfaz de usuario de Hadoop desde el navegador.
    
+   ──► Acceder a la interfaz de usuario de Hadoop desde el navegador.  
    ```
    http://localhost:9870 
    ```
-   
    ```
    http://localhost:9864 
    ```
-   
    ```
    http://localhost:8088 
    ```

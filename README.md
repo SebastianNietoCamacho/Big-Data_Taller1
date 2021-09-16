@@ -162,14 +162,17 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    http://localhost:9870 
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133683772-9871b532-439d-41f2-8682-f4b48d16cf15.png" width="500" hight="300"> 
+
    ```
    http://localhost:9864 
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133683805-45c49a0f-ce51-424a-89ef-238cc4e46aca.png" width="500" hight="300"> 
+
    ```
    http://localhost:8088 
    ```
+   <img src="https://user-images.githubusercontent.com/90856580/133683823-1a721ec4-6f50-4abe-ae9d-1272621da828.png" width="500" hight="300"> 
 
 
 PARTE DOS

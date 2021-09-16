@@ -27,21 +27,25 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133661619-692c7b24-20e8-423c-9fcb-0e483a1830ea.png" width="500" hight="300"> 
       
+      
    ──► Instalar OpenJDK en Ubuntu.
    ```
    $ sudo apt update 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133662178-63bd359b-c122-4c6b-a763-904f6b95fede.png" width="500" hight="300"> 
 
+
    ```
    $ sudo apt install openjdk-8-jdk -y 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133663499-7761818b-2531-4867-8b91-d5d0fe1aaee4.png" width="500" hight="300"> 
 
+
    ```
    $ java -version; javac -version
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133662427-58a16aaa-25de-488f-a1cf-2167bc868bef.png" width="500" hight="300"> 
+
 
    ──► Configurar un usuario no-root para el entorno de Hadoop.
    ```
@@ -49,24 +53,26 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133668255-308aaa47-4964-486e-a35f-84fa382731a8.png" width="500" hight="300"> 
 
-   ──► Crear un usuario Hadoop.
 
+   ──► Crear un usuario Hadoop.
    ```
    $ sudo adduser hdoop
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133668398-e222f05d-7ab0-479c-98ee-c7d77be749bb.png" width="500" hight="300"> 
+
 
    ```
    $ su - hdoop
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669229-b25fd509-7c9d-4d05-b4f8-67ac6efc416f.png" width="500" hight="300"> 
 
-   ──► Habilitar SSH sin contraseña para el usuario de Hadoop.
 
+   ──► Habilitar SSH sin contraseña para el usuario de Hadoop.
    ```
    $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669299-aac8d67c-c1ac-4ffa-a7e5-07b6e5db8a24.png" width="500" hight="300"> 
+
 
    ```
    $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys

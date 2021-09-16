@@ -34,6 +34,7 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133662178-63bd359b-c122-4c6b-a763-904f6b95fede.png" width="500" hight="300"> 
    
+   
    ```
    $ sudo apt install openjdk-8-jdk -y 
    ```

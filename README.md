@@ -10,5 +10,5 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 
    Se instaló VirtualBox.
 
-   ![image](https://user-images.githubusercontent.com/90856580/133651737-0df391a8-f5f1-4d02-9d48-2b2c51639fe3.png width="100" height="100" )
+   ![image](https://user-images.githubusercontent.com/90856580/133651737-0df391a8-f5f1-4d02-9d48-2b2c51639fe3.png) width="200" height="200" 
 

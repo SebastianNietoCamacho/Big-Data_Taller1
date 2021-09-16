@@ -238,11 +238,13 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
    <img src="https://user-images.githubusercontent.com/90856580/133694823-ae44b39a-66ce-4391-8a8b-511458bdc7dc.png" width="500" hight="300"> 
    <img src="https://user-images.githubusercontent.com/90856580/133695156-bd07307e-60ce-4ec5-97fc-24935258fa6c.png" width="500" hight="300"> 
    <img src="https://user-images.githubusercontent.com/90856580/133695199-e24054f5-21a8-4830-8a51-bac2a2c09f17.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133700647-10d2616c-3402-442b-b432-9ebf77ed3068.png" width="500" hight="300"> 
+
 
 
 
    
-   RESPUESTA: 
+   RESPUESTA: con el fin de probar al programa WordCount, se le ingresa un texto plano que contiene un poema en el idioma español; encontrando que la salida es un listado de todas las palabras que contiene el archivo plano y junto a estos datos aparece la cantidad con que cada string se repite dentro del texto. Por tanto, se podría decir que WordCount funciona como un analizador de textos en donde va guardando cada cadena de strings que encuentra antes de un espacio vacío para luego guardarlo en una matriz 2*n, vigilando que no se repita y en caso de suceder se aumenta una variable contadora, para luego imprimr un listado de dos columnas que representan, de izquierda a derecha, cada palabra y un contador de veces que se repite dentro del texto. Analizando el código fuente 
    
    
 

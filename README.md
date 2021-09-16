@@ -120,7 +120,7 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml 
    ```
-  ![image](https://user-images.githubusercontent.com/90856580/133671487-6203ff90-6502-4a47-8a68-f8d6e5098389.png)
+   ![image](https://user-images.githubusercontent.com/90856580/133671487-6203ff90-6502-4a47-8a68-f8d6e5098389.png)
 
    ──► Edición del archivo yarn-site.xml.
    

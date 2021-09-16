@@ -12,3 +12,8 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 
    <img src="https://user-images.githubusercontent.com/90856580/133651737-0df391a8-f5f1-4d02-9d48-2b2c51639fe3.png" width="350px" hight="100px"> 
 
+2. Teniendo la máquina virtual establecida, se debe instalar sobre esta un sistema operativo basado en Linux como Ubuntu.
+
+  Se instaló Ubuntu en su versión 21.04.
+  
+  <img src="![image](https://user-images.githubusercontent.com/90856580/133654221-aa7125b4-4e56-4893-8d09-7003dc5c9004.png)" width="350px" hight="100px"> 

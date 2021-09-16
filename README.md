@@ -16,4 +16,4 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 
    Se instaló Ubuntu en su versión 21.04.
   
-  <img src="https://user-images.githubusercontent.com/90856580/133654221-aa7125b4-4e56-4893-8d09-7003dc5c9004.png" width="350px" hight="100px"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133654221-aa7125b4-4e56-4893-8d09-7003dc5c9004.png" width="350px" hight="100px"> 

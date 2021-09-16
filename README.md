@@ -20,3 +20,8 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 
 3. Al tener adecuado el ambiente para la instalación de Hadoop, se deben seguir las instrucciones de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/Instruction_INSTALLING_HADOOP_Ubuntu.pdf. 
    Los pasos establecidos allí se indicarán a continuación: 
+   
+   ```
+   Da un ejemplo
+   
+   ```

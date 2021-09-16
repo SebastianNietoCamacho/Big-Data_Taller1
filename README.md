@@ -24,7 +24,5 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    ──► Prerequisitos.
    ```
    $ cp ~/.bashrc ~/.bashrc.bak    
-   
-   ![image](https://user-images.githubusercontent.com/90856580/133661301-7b4172ea-7ab3-4ca0-b69d-ab2cf2e71d2e.png)
-
    ```
+      ![image](https://user-images.githubusercontent.com/90856580/133661301-7b4172ea-7ab3-4ca0-b69d-ab2cf2e71d2e.png)

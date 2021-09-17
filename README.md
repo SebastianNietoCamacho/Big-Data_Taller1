@@ -21,14 +21,14 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 3. Al tener adecuado el ambiente para la instalación de Hadoop, se deben seguir las instrucciones de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/Instruction_INSTALLING_HADOOP_Ubuntu.pdf. 
    Los pasos establecidos allí se indicarán a continuación: 
    
-   ──► Prerequisitos.
+   ──► Prerequisitos. ⏳
    ```
    $ cp ~/.bashrc ~/.bashrc.bak    
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133661619-692c7b24-20e8-423c-9fcb-0e483a1830ea.png" width="500" hight="300"> 
       
       
-   ──► Instalar OpenJDK en Ubuntu.
+   ──► Instalar OpenJDK en Ubuntu. ⏳
    ```
    $ sudo apt update 
    ```
@@ -45,14 +45,14 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133662427-58a16aaa-25de-488f-a1cf-2167bc868bef.png" width="500" hight="300"> 
 
 
-   ──► Configurar un usuario no-root para el entorno de Hadoop.
+   ──► Configurar un usuario no-root para el entorno de Hadoop. ⏳
    ```
    $ sudo apt install openssh-server openssh-client -y
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133668255-308aaa47-4964-486e-a35f-84fa382731a8.png" width="500" hight="300"> 
 
 
-   ──► Crear un usuario Hadoop.
+   ──► Crear un usuario Hadoop. ⏳
    ```
    $ sudo adduser hdoop
    ```
@@ -64,7 +64,7 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133669229-b25fd509-7c9d-4d05-b4f8-67ac6efc416f.png" width="500" hight="300"> 
 
 
-   ──► Habilitar SSH sin contraseña para el usuario de Hadoop.
+   ──► Habilitar SSH sin contraseña para el usuario de Hadoop. ⏳
    ```
    $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
    ```
@@ -78,14 +78,14 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133669457-320c3b8d-14d9-423d-8347-870c67fff1ac.png" width="500" hight="300"> 
 
 
-   ──► Descargar e instalar Hadoop en Ubuntu.
+   ──► Descargar e instalar Hadoop en Ubuntu. ⏳
    ```
    $ wget [yourlink]
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133669995-6cb09d59-c49b-4e49-ad2a-c121111cd409.png" width="500" hight="300"> 
   
   
-   ──► Configuración de variables del entorno de Hadoop (.ashrc).
+   ──► Configuración de variables del entorno de Hadoop (.ashrc). ⏳
    ```
    $ sudo nano .bashrc
    ```
@@ -97,21 +97,21 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133682895-eeda5325-38dd-458c-a4c6-3aab782c3bda.png" width="500" hight="300"> 
 
 
-   ──► Edición del archivo hadoop-env.sh.
+   ──► Edición del archivo hadoop-env.sh. ⏳
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133682934-535f3d1c-71f7-4606-952c-f01f9b68c7ce.png" width="500" hight="300"> 
 
    
-   ──► Edición del archivo core-site.xml.
+   ──► Edición del archivo core-site.xml. ⏳
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml  
    ```
     <img src="https://user-images.githubusercontent.com/90856580/133682973-16944e8a-a86e-46e4-b03d-9a7bf0780951.png" width="500" hight="300"> 
 
    
-   ──► Edición del archivo hdfs-site.xml.
+   ──► Edición del archivo hdfs-site.xml. ⏳
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
    ```
@@ -124,28 +124,28 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133683024-94ddd5e5-a759-4e7d-9b0b-90e82aa0da8d.png" width="500" hight="300"> 
 
    
-   ──► Edición del archivo mapred-site.xml.
+   ──► Edición del archivo mapred-site.xml. ⏳
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671487-6203ff90-6502-4a47-8a68-f8d6e5098389.png" width="500" hight="300"> 
 
 
-   ──► Edición del archivo yarn-site.xml.
+   ──► Edición del archivo yarn-site.xml. ⏳
    ```
    $ sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671518-20de7cc5-e147-427d-85e6-c1801c1cd0d3.png" width="500" hight="300"> 
 
 
-   ──► Formateo de HDFS NameNode.
+   ──► Formateo de HDFS NameNode. ⏳
    ```
    $ hdfs namenode -format 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133671661-3f65f35b-9d1c-4ee0-9a28-d78486154540.png" width="500" hight="300"> 
 
 
-   ──► Iniciar el Cluster de Hadoop.
+   ──► Iniciar el Cluster de Hadoop. ⏳
    ```
    $ ./start-dfs.sh    
    ```
@@ -158,7 +158,7 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133672313-dd43a780-946d-4613-8e05-c36b683c3a09.png" width="500" hight="300"> 
    
    
-   ──► Acceder a la interfaz de usuario de Hadoop desde el navegador.  
+   ──► Acceder a la interfaz de usuario de Hadoop desde el navegador. ⏳
    ```
    http://localhost:9870 
    ```
@@ -175,7 +175,7 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
    <img src="https://user-images.githubusercontent.com/90856580/133683823-1a721ec4-6f50-4abe-ae9d-1272621da828.png" width="500" hight="300"> 
 
 
-PARTE DOS
+PARTE DOS 2️⃣
 
 MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmenes de datos de manera distribuida y escalable.
 
@@ -249,13 +249,13 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
    
 
 
-PARTE TRES
+PARTE TRES 3️⃣
 
 En los últimos años, Spark ha ganado una importante popularidad respecto a Hadoop/MapReduce para procesamiento distribuido de datos. La clave de Spark es su procesamiento en memoria. También tiene la ventaja de que puede ser programado en otros lenguajes más compactos como Scala, Python y R.
 
 1. A continuación se deben seguir los ejemplos de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/CIS612_SparkInstallation_Ubuntu.pdf, para la instalación de Spark en Ubuntu.
 
-   ──► Instalación de paquetes requeridos para Spark.
+   ──► Instalación de paquetes requeridos para Spark. ⏳
    ```
    $ sudo apt install scala git -y 
    ```
@@ -267,7 +267,7 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    <img src="https://user-images.githubusercontent.com/90856580/133703254-ba1e184f-06fd-4d8e-a341-105fb32f1d19.png" width="500" hight="300"> 
 
    
-   ──► Descarga y configuración de Spark en Ubuntu.
+   ──► Descarga y configuración de Spark en Ubuntu. ⏳
    ```
    $ wget https://ftp.wayne.edu/apache/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz
    ```
@@ -279,13 +279,13 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    <img src="https://user-images.githubusercontent.com/90856580/133703337-514f6a0d-e1f5-4592-90fd-37e34339b277.png" width="500" hight="300"> 
 
 
-   ──► Configuración del entorno de Spark.
+   ──► Configuración del entorno de Spark. ⏳
    ```
    $ nano .profile 
    ```
    
    
-   ──► Iniciación del servidor maestro autónomo de Spark.
+   ──► Iniciación del servidor maestro autónomo de Spark. ⏳
    ```
    $ start-master.sh
    ```
@@ -298,7 +298,7 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
 
    
    
-   ──► Iniciar Spark Slave Server (Iniciar un proceso de trabajo).
+   ──► Iniciar Spark Slave Server (Iniciar un proceso de trabajo). ⏳
    ```
    start-slave.sh spark://master:port
    ```
@@ -310,13 +310,14 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    <img src="https://user-images.githubusercontent.com/90856580/133703801-c5855729-7dff-4042-99dc-02fdc7124d90.png" width="500" hight="300"> 
 
 
-   ──► Prueba Spark Shell.
+   ──► Prueba Spark Shell. ⏳
    ```
    $ spark-shell 
    ```
    <img src="https://user-images.githubusercontent.com/90856580/133703861-95d11d80-94f8-4731-ba28-6851f991d3bd.png" width="500" hight="300"> 
 
-   ──► Prueba de Python in Spark.
+
+   ──► Prueba de Python in Spark. ⏳
    ```
    $ pyspark 
    ```
@@ -333,7 +334,7 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    
    
    
-PARTE CUATRO
+PARTE CUATRO 4️⃣
 
 Como con cualquier otra herramienta, desarrollar un programa de computador desde la interfaz de línea de comandos es una labor tediosa. Por lo general, los desarrolladores recurren a entornos de desarrollo (IDE) que ofrecen gran variedad de apoyos a la codificación en términos de evaluación de sintaxis, debugging, conexión con recursos externos, entre muchos otros.
 

@@ -362,10 +362,12 @@ Como con cualquier otra herramienta, desarrollar un programa de computador desde
 
 3. Este paquete de software, entre muchas otras cosas, contiene el entorno de desarrollo Jupyter Notebook. Para iniciarlo, desde una terminal y ubicado sobre la misma carpeta en la que se clonó el repositorio previamente, se debe digitar el comando: jupyter lab --ip=0.0.0.0.
 
-
+ <img src="https://user-images.githubusercontent.com/90856580/133715902-0bfe6e4c-323f-4a30-8988-a91cf4c8475a.png" width="500" hight="300"> 
 
 4. Desde la misma máquina o desde otra máquina virtual o física se debe abrir un navegador web y dirijírse a: http://<puerto>:8888/lab/. Si todo funciona correctamente hasta este punto, desde la página web que se abre se debería poder visualizar la estructura de archivos del repositorio clonado.
    
+    <img src="https://user-images.githubusercontent.com/90856580/133715970-128d317b-b71a-4120-b751-85ec48f0877a.png" width="500" hight="300"> 
+
 
 5. Finalmente, se deben ejecutar los scripts: spark-basics.ipynb y spark-data-analysis.ipynb. Analizar cada archivo para detallar los elementos mmás importantes de cada uno. 
 

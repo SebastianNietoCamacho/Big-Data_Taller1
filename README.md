@@ -8,17 +8,17 @@ Hadoop se encuentra optimizado para ser ejecutado en sistemas operativos basados
 
 1. En caso de no poseer un sistema operativo Linux, se debe descargar e instalar VirtualBox o VMWare.
 
-   Se instaló VirtualBox en su versión 6.1.
+   Se instaló VirtualBox en su versión 6.1. 💻
 
    <img src="https://user-images.githubusercontent.com/90856580/133651737-0df391a8-f5f1-4d02-9d48-2b2c51639fe3.png" width="350px" hight="100px"> 
 
 2. Teniendo la máquina virtual establecida, se debe instalar sobre esta un sistema operativo basado en Linux como Ubuntu.
 
-   Se instaló Ubuntu en su versión 21.04.
+   Se instaló Ubuntu en su versión 21.04. 💻
   
    <img src="https://user-images.githubusercontent.com/90856580/133654221-aa7125b4-4e56-4893-8d09-7003dc5c9004.png" width="350px" hight="100px"> 
 
-3. Al tener adecuado el ambiente para la instalación de Hadoop, se deben seguir las instrucciones de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/Instruction_INSTALLING_HADOOP_Ubuntu.pdf. 
+3. Al tener adecuado el ambiente para la instalación de Hadoop, se deben seguir las instrucciones de la siguiente guía 🔗: http://cis.csuohio.edu/~sschung/cis612/Instruction_INSTALLING_HADOOP_Ubuntu.pdf. 
    Los pasos establecidos allí se indicarán a continuación: 
    
    ──► Prerequisitos. ⏳
@@ -179,7 +179,7 @@ PARTE DOS 2️⃣
 
 MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmenes de datos de manera distribuida y escalable.
 
-1. Una vez instalado Hadoop, se hace uso de la guía oficial de Apache: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html, en su sección de "Execution" para seguir los pasos del 4 al 7 con el fin de ejecutar un programa de ejemplo.
+1. Una vez instalado Hadoop, se hace uso de la guía oficial de Apache 🔗: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html, en su sección de "Execution" para seguir los pasos del 4 al 7 con el fin de ejecutar un programa de ejemplo.
 
    ```
    $ bin/hdfs dfs -mkdir /user
@@ -224,7 +224,7 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
 
    <img src="https://user-images.githubusercontent.com/90856580/133687875-4c9bafe8-dbfd-421f-ac86-df0003a7d307.png" width="500" hight="300"> 
 
-   RESPUESTA: la ejecución del programa grep, el cual está como ejemplo por defecto en los pasos 4 a 7 de la guía oficial de Apace para Hadoop, nos trae el conteo de las coincidencias que se encontraron en el archivo entrada que se le implementó; es decir, el programa hace uso de las expresiones regulares para escanear al archivo entrada y por salida evidencia cuántas coincidencias se encontraron con dicha regex establecida. Analizando el código fuente del software, se evidencia que la expresión regular estructurada es: 'dfs [az.]+'; además de que utiliza la propiedad length de un objeto String con el fin de obtener toda su longitud y así ir aumentando una variable contadora que registra el número de coincidencias obtenidas. Consultando un poco en la world wide web, se encontró que el programa toma la configuración de archivos de Hadoop y tal vez por eso, desde una visión empírica, al poner dos archivos distintos, se siguen obteniendo las mismas salidas. Los pasos que utiliza el framework de Map-Reduce son el registro de entradas, una salidad de entradas, salidad de bytes, salida materializada de bytes, entreda dividida de bytes, registros de combinación para entrada y salida, reducción de los grupos de entrada, reducción de la baraja de bytes, reducción para los registros de entrada y salida, derrame de registros, mapas barajados, barajas fallidas, salidas de mapas fusionados, y finalmente se evidencian rgistros de temas relacionados al hardware como la memoria física, memoria virtual, tiempos de la CPU, entre otros.
+   RESPUESTA 💡: la ejecución del programa grep, el cual está como ejemplo por defecto en los pasos 4 a 7 de la guía oficial de Apace para Hadoop, nos trae el conteo de las coincidencias que se encontraron en el archivo entrada que se le implementó; es decir, el programa hace uso de las expresiones regulares para escanear al archivo entrada y por salida evidencia cuántas coincidencias se encontraron con dicha regex establecida. Analizando el código fuente del software, se evidencia que la expresión regular estructurada es: 'dfs [az.]+'; además de que utiliza la propiedad length de un objeto String con el fin de obtener toda su longitud y así ir aumentando una variable contadora que registra el número de coincidencias obtenidas. Consultando un poco en la world wide web, se encontró que el programa toma la configuración de archivos de Hadoop y tal vez por eso, desde una visión empírica, al poner dos archivos distintos, se siguen obteniendo las mismas salidas. Los pasos que utiliza el framework de Map-Reduce son el registro de entradas, una salidad de entradas, salidad de bytes, salida materializada de bytes, entreda dividida de bytes, registros de combinación para entrada y salida, reducción de los grupos de entrada, reducción de la baraja de bytes, reducción para los registros de entrada y salida, derrame de registros, mapas barajados, barajas fallidas, salidas de mapas fusionados, y finalmente se evidencian rgistros de temas relacionados al hardware como la memoria física, memoria virtual, tiempos de la CPU, entre otros.
 
 
 
@@ -244,7 +244,7 @@ MapReduce es el componente de Hadoop que se encarga de procesar grandes volúmen
 
 
    
-   RESPUESTA: con el fin de probar al programa WordCount, se le ingresa un texto plano que contiene un poema en el idioma español; encontrando que la salida es un listado de todas las palabras que contiene el archivo plano y junto a estos datos aparece la cantidad con que cada string se repite dentro del texto. Por tanto, se podría decir que WordCount funciona como un analizador de textos en donde va guardando cada cadena de strings que encuentra antes de un espacio vacío para luego guardarlo en una matriz 2*n, vigilando que no se repita y en caso de suceder se aumenta una variable contadora, para luego imprimr un listado de dos columnas que representan, de izquierda a derecha, cada palabra y un contador de veces que se repite dentro del texto. Analizando el código fuente del programa, este contiene en su primera línea un apartado a través del cual se le brinda la dirección del archivo plano que se desea ejecutar pero como estamos desde el usuario propio de la máquina virtual no es necesario utilizarla; en sus siguientes líneas de código, la función: lambda line.split("") posee la función de tomar las cadenas de strings y las separa por espacios para que, con otro mapeo de la función map(), se le asigne una clave de valor por una cantidad inicial y finalmente se realiza 'la reducción por llave (Reduce by Key)' para sumar aquellas llaves que son iguales. 
+   RESPUESTA 💡: con el fin de probar al programa WordCount, se le ingresa un texto plano que contiene un poema en el idioma español; encontrando que la salida es un listado de todas las palabras que contiene el archivo plano y junto a estos datos aparece la cantidad con que cada string se repite dentro del texto. Por tanto, se podría decir que WordCount funciona como un analizador de textos en donde va guardando cada cadena de strings que encuentra antes de un espacio vacío para luego guardarlo en una matriz 2*n, vigilando que no se repita y en caso de suceder se aumenta una variable contadora, para luego imprimr un listado de dos columnas que representan, de izquierda a derecha, cada palabra y un contador de veces que se repite dentro del texto. Analizando el código fuente del programa, este contiene en su primera línea un apartado a través del cual se le brinda la dirección del archivo plano que se desea ejecutar pero como estamos desde el usuario propio de la máquina virtual no es necesario utilizarla; en sus siguientes líneas de código, la función: lambda line.split("") posee la función de tomar las cadenas de strings y las separa por espacios para que, con otro mapeo de la función map(), se le asigne una clave de valor por una cantidad inicial y finalmente se realiza 'la reducción por llave (Reduce by Key)' para sumar aquellas llaves que son iguales.  
    
    
 
@@ -253,7 +253,7 @@ PARTE TRES 3️⃣
 
 En los últimos años, Spark ha ganado una importante popularidad respecto a Hadoop/MapReduce para procesamiento distribuido de datos. La clave de Spark es su procesamiento en memoria. También tiene la ventaja de que puede ser programado en otros lenguajes más compactos como Scala, Python y R.
 
-1. A continuación se deben seguir los ejemplos de la siguiente guía: http://cis.csuohio.edu/~sschung/cis612/CIS612_SparkInstallation_Ubuntu.pdf, para la instalación de Spark en Ubuntu.
+1. A continuación se deben seguir los ejemplos de la siguiente guía 🔗: http://cis.csuohio.edu/~sschung/cis612/CIS612_SparkInstallation_Ubuntu.pdf, para la instalación de Spark en Ubuntu.
 
    ──► Instalación de paquetes requeridos para Spark. ⏳
    ```
@@ -339,11 +339,11 @@ PARTE CUATRO 4️⃣
 Como con cualquier otra herramienta, desarrollar un programa de computador desde la interfaz de línea de comandos es una labor tediosa. Por lo general, los desarrolladores recurren a entornos de desarrollo (IDE) que ofrecen gran variedad de apoyos a la codificación en términos de evaluación de sintaxis, debugging, conexión con recursos externos, entre muchos otros.
 
 
-1. Dentro de la máquina virtual, en cualquier carpeta, se debe clonar el repositorio localizado en la siguiente dirección web: https://github.com/bigdata-unbosque/SparkTutorial. Este repositorio contiene dos scripts que serán trabajados más adelante así como una carpeta 'data' con un archivo TXT. Sobre esta misma carpeta descargue y descomprima el archivo ubicado en la siguiente dirección: https://www.kaggle.com/dinnymathew/usstockprices.
+1. Dentro de la máquina virtual, en cualquier carpeta, se debe clonar el repositorio localizado en la siguiente dirección web: https://github.com/bigdata-unbosque/SparkTutorial. Este repositorio contiene dos scripts que serán trabajados más adelante así como una carpeta 'data' con un archivo TXT. Sobre esta misma carpeta descargue y descomprima el archivo ubicado en la siguiente dirección 🔗: https://www.kaggle.com/dinnymathew/usstockprices.
 
    <img src="https://user-images.githubusercontent.com/90856580/133705993-ef14c0dd-e82b-46b9-b4c8-5fcf86cd5810.png" width="500" hight="300"> 
 
-2. En el mundo de Python y el análisis de datos, Jupyter Notebooks es una de las herramientas de desarrollo más ampliamente usadas. Se debe descargar e instalar Anaconda: https://www.anaconda.com/products/individual-d, en la misma máquina virtual en donde instaló se instaló Spark.
+2. En el mundo de Python y el análisis de datos, Jupyter Notebooks es una de las herramientas de desarrollo más ampliamente usadas. Se debe descargar e instalar Anaconda 🔗: https://www.anaconda.com/products/individual-d, en la misma máquina virtual en donde instaló se instaló Spark.
 
    <img src="https://user-images.githubusercontent.com/90856580/133706381-d5040729-dabe-47bb-99b7-310cfc23c2d3.png" width="500" hight="300"> 
 

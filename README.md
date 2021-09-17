@@ -1,11 +1,14 @@
 # Big-Data_Taller1
-Este repositorio contendrá la descripción de cuatro partes de un taller de 'Big Data and Analytic' en donde se realiza la instalación, configuración y uso de herramientas como Hadoop, Spark y Anaconda.
-
 Universidad El Bosque 🌳, Facultad de Ingeniería - Ingeniería de Sistemas ⌨.
 
 Integrantes: Sebastián Camilo Nieto Camacho, Diego Mauricio Veloza Martínez.
 
 Presentado a: Prof. Fabián Camilo Peña. 
+
+
+
+Este repositorio contendrá la descripción de cuatro partes de un taller de 'Big Data and Analytic' en donde se realiza la instalación, configuración y uso de herramientas como Hadoop, Spark y Anaconda.
+
 
 
 PARTE UNO 1️⃣

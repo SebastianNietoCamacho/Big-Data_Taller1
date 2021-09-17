@@ -346,7 +346,7 @@ Como con cualquier otra herramienta, desarrollar un programa de computador desde
 
    <img src="https://user-images.githubusercontent.com/90856580/133706381-d5040729-dabe-47bb-99b7-310cfc23c2d3.png" width="500" hight="300"> 
 
-   ![image](https://user-images.githubusercontent.com/90856580/133706426-06e0178c-e309-411c-868e-8d6d965dff4b.png)
+   <img src="https://user-images.githubusercontent.com/90856580/133706426-06e0178c-e309-411c-868e-8d6d965dff4b.png" width="500" hight="300"> 
 
 
 

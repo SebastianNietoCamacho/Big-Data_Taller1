@@ -1,6 +1,10 @@
 # Big-Data_Taller1
 Este repositorio contendrá la descripción de cuatro partes de un taller de 'Big Data and Analytic' en donde se realiza la instalación, configuración y uso de herramientas como Hadoop, Spark y Anaconda.
 
+Universidad El Bosque 🌳, Facultad de Ingeniería - Ingeniería de Sistemas ⌨.
+Integrantes: Sebastián Camilo Nieto Camacho, Diego Mauricio Veloza Martínez.
+Presentado a: Prof. Fabián Camilo Peña. 
+
 
 PARTE UNO 1️⃣
 
@@ -339,7 +343,7 @@ PARTE CUATRO 4️⃣
 Como con cualquier otra herramienta, desarrollar un programa de computador desde la interfaz de línea de comandos es una labor tediosa. Por lo general, los desarrolladores recurren a entornos de desarrollo (IDE) que ofrecen gran variedad de apoyos a la codificación en términos de evaluación de sintaxis, debugging, conexión con recursos externos, entre muchos otros.
 
 
-1. Dentro de la máquina virtual, en cualquier carpeta, se debe clonar el repositorio localizado en la siguiente dirección web: https://github.com/bigdata-unbosque/SparkTutorial. Este repositorio contiene dos scripts que serán trabajados más adelante así como una carpeta 'data' con un archivo TXT. Sobre esta misma carpeta descargue y descomprima el archivo ubicado en la siguiente dirección 🔗: https://www.kaggle.com/dinnymathew/usstockprices.
+1. Dentro de la máquina virtual, en cualquier carpeta, se debe clonar el repositorio localizado en la siguiente dirección web 🔗: https://github.com/bigdata-unbosque/SparkTutorial. Este repositorio contiene dos scripts que serán trabajados más adelante así como una carpeta 'data' con un archivo TXT. Sobre esta misma carpeta descargue y descomprima el archivo ubicado en la siguiente dirección 🔗: https://www.kaggle.com/dinnymathew/usstockprices.
 
    <img src="https://user-images.githubusercontent.com/90856580/133705993-ef14c0dd-e82b-46b9-b4c8-5fcf86cd5810.png" width="500" hight="300"> 
 

@@ -292,7 +292,8 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    ```
    $ nano .profile 
    ```
-   
+   <img src="https://user-images.githubusercontent.com/90856580/133717386-ddab6e21-5ae8-4832-aa34-67f7fb57f25c.png" width="500" hight="300"> 
+
    
    ──► Iniciación del servidor maestro autónomo de Spark. ⏳
    ```

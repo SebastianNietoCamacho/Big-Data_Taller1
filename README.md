@@ -320,8 +320,43 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    ```
    $ pyspark 
    ```
-   <img src="https://user-images.githubusercontent.com/90856580/133703887-f7a09de8-0c25-44ab-9d60-940fa4cc48eb.png)
+   <img src="https://user-images.githubusercontent.com/90856580/133703887-f7a09de8-0c25-44ab-9d60-940fa4cc48eb.png" width="500" hight="300"> 
 
-   
-   
   
+2. Revisar el código de WordCount dispuesto como ejemplo en la web oficial de Apaache sobre Spak, para un mejor entendimiento y realizar los cálculos de conteo de palabras sin tener en cuenta mayúsculas, minúsculas y signos de puntuación.
+
+   EN REVISIÓN.
+    
+3. Ejecute los códigos origanal y extendido en PySpark y analice los resultados.      
+ 
+   EN REVISIÓN.
+   
+   
+   
+PARTE CUATRO
+
+Como con cualquier otra herramienta, desarrollar un programa de computador desde la interfaz de línea de comandos es una labor tediosa. Por lo general, los desarrolladores recurren a entornos de desarrollo (IDE) que ofrecen gran variedad de apoyos a la codificación en términos de evaluación de sintaxis, debugging, conexión con recursos externos, entre muchos otros.
+
+
+1. Dentro de la máquina virtual, en cualquier carpeta, se debe clonar el repositorio localizado en la siguiente dirección web: https://github.com/bigdata-unbosque/SparkTutorial. Este repositorio contiene dos scripts que serán trabajados más adelante así como una carpeta 'data' con un archivo TXT. Sobre esta misma carpeta descargue y descomprima el archivo ubicado en la siguiente dirección: https://www.kaggle.com/dinnymathew/usstockprices.
+
+   <img src="https://user-images.githubusercontent.com/90856580/133705993-ef14c0dd-e82b-46b9-b4c8-5fcf86cd5810.png" width="500" hight="300"> 
+
+2. En el mundo de Python y el análisis de datos, Jupyter Notebooks es una de las herramientas de desarrollo más ampliamente usadas. Se debe descargar e instalar Anaconda: https://www.anaconda.com/products/individual-d, en la misma máquina virtual en donde instaló se instaló Spark.
+
+   <img src="https://user-images.githubusercontent.com/90856580/133706381-d5040729-dabe-47bb-99b7-310cfc23c2d3.png" width="500" hight="300"> 
+
+   ![image](https://user-images.githubusercontent.com/90856580/133706426-06e0178c-e309-411c-868e-8d6d965dff4b.png)
+
+
+
+3. Este paquete de software, entre muchas otras cosas, contiene el entorno de desarrollo Jupyter Notebook. Para iniciarlo, desde una terminal y ubicado sobre la misma carpeta en la que se clonó el repositorio previamente, se debe digitar el comando: jupyter lab --ip=0.0.0.0.
+
+
+
+4. Desde la misma máquina o desde otra máquina virtual o física se debe abrir un navegador web y dirijírse a: http://<puerto>:8888/lab/. Si todo funciona correctamente hasta este punto, desde la página web que se abre se debería poder visualizar la estructura de archivos del repositorio clonado.
+   
+
+5. Finalmente, se deben ejecutar los scripts: spark-basics.ipynb y spark-data-analysis.ipynb. Analizar cada archivo para detallar los elementos mmás importantes de cada uno. 
+
+

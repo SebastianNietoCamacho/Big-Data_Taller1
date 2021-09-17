@@ -334,13 +334,25 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    <img src="https://user-images.githubusercontent.com/90856580/133703887-f7a09de8-0c25-44ab-9d60-940fa4cc48eb.png" width="500" hight="300"> 
 
   
-2. Revisar el código de WordCount dispuesto como ejemplo en la web oficial de Apaache sobre Spak, para un mejor entendimiento y realizar los cálculos de conteo de palabras sin tener en cuenta mayúsculas, minúsculas y signos de puntuación.
+2. Revisar el código de WordCount dispuesto como ejemplo en la web oficial de Apaache sobre Spark, para un mejor entendimiento y realizar los cálculos de conteo de palabras sin tener en cuenta mayúsculas, minúsculas y signos de puntuación.
 
-   EN REVISIÓN.
+   <img src="https://user-images.githubusercontent.com/90856580/133720824-ca5cfebf-96a9-4e1d-adce-6a16e1b230f8.png" width="500" hight="300"> 
+
     
-3. Ejecute los códigos origanal y extendido en PySpark y analice los resultados.      
+3. Ejecute los códigos origanal y extendido en PySpark y analice los resultados.     
  
-   EN REVISIÓN.
+   Ejecución del código en Scala 💿: 
+   
+   <img src="https://user-images.githubusercontent.com/90856580/133719075-8e2e2822-e2ea-4a8e-a1e0-6b03d5b8b9cd.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133719130-3521e4b1-e6f7-4d7f-8c2f-4cf06ea1d11b.png" width="500" hight="300"> 
+
+   Ejecución del código en Python 💿: 
+   
+   <img src="https://user-images.githubusercontent.com/90856580/133719389-4aaef7e2-f1bd-4df8-b2d5-21407610d3f2.png" width="500" hight="300"> 
+   <img src="https://user-images.githubusercontent.com/90856580/133719431-2b1fb691-9c6d-437c-8b20-7197672fab1f.png" width="500" hight="300"> 
+
+
+   Al ejecutar ambos códigos originales tanto en Scala como en Python es posible deducir que la velocidad de compilación en Python es más rápida que en Scala pues en Scala se evidenció que requiere de mucho recurso de tiempo para cargar el archivo plano y posteriormente analizarlo. Otro punto deductible a favor de Python es que la evidencia de los resultados es mucho más ordenada que lo expuesto por Scala; algo que podría tener mejores efectos en el uso de los datos por parte de quienes utilicen estos códigos.  
    
    
    

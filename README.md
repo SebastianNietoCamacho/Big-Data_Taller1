@@ -259,33 +259,29 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    ```
    $ sudo apt install scala git -y 
    ```
+   ![image](https://user-images.githubusercontent.com/90856580/133703171-2ba55406-33e4-4683-bdac-0c6350a815ed.png)
 
    ```
    $ java -version; javac -version; scala -version; git --version
    ```
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703254-ba1e184f-06fd-4d8e-a341-105fb32f1d19.png)
+
    
    ──► Descarga y configuración de Spark en Ubuntu.
    ```
    $ wget https://ftp.wayne.edu/apache/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz
    ```
+   ![image](https://user-images.githubusercontent.com/90856580/133703299-cd389ec5-1ff6-4186-8857-e71044581cff.png)
 
    ```
    $ tar xvf spark-* 
    ```
-   
-   ```
-   $ sudo mv spark-3.0.1-bin-hadoop2.7 /opt/spark 
-   ```
-   
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703337-514f6a0d-e1f5-4592-90fd-37e34339b277.png)
+
+
    ──► Configuración del entorno de Spark.
    ```
    $ nano .profile 
-   ```
-   
-   ```
-   $ source ~/.profile 
    ```
    
    
@@ -293,51 +289,39 @@ En los últimos años, Spark ha ganado una importante popularidad respecto a Had
    ```
    $ start-master.sh
    ```
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703495-c92a58a2-3eac-4988-99e1-01a4176f3057.png)
+
    ```
    http://127.0.0.1:8080/ 
    ```
+   ![image](https://user-images.githubusercontent.com/90856580/133703920-b95ed047-ea86-4c2d-9bf4-691052f1223a.png)
+
    
    
    ──► Iniciar Spark Slave Server (Iniciar un proceso de trabajo).
    ```
    start-slave.sh spark://master:port
    ```
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703624-c52bd3e8-abc6-4651-8054-24fe3e1e5197.png)
+
    ```
    $ start-slave.sh spark://yixi-virtualbox:7077 
    ```
-   
-   ```
-   $ start-slave.sh -c 1 spark://yixi-virtualbox:7077 
-   ```
-   
-   ```
-   $ start-slave.sh -m 512M spark://yixi-virtualbox:7077 
-   ```
-   
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703801-c5855729-7dff-4042-99dc-02fdc7124d90.png)
+
+
    ──► Prueba Spark Shell.
    ```
    $ spark-shell 
    ```
-   
+   ![image](https://user-images.githubusercontent.com/90856580/133703861-95d11d80-94f8-4731-ba28-6851f991d3bd.png)
+
    ──► Prueba de Python in Spark.
    ```
    $ pyspark 
    ```
+   ![image](https://user-images.githubusercontent.com/90856580/133703887-f7a09de8-0c25-44ab-9d60-940fa4cc48eb.png)
+
    
-   ──► Comandos básicos para iniciar y detener el servicio maestro.
-   ```
-   $ start-master.sh 
-   ```
-   
-   ```
-   $ stop-master.sh 
-   ```
-   
-   ```
-   $ stop-slave.sh
-   ```
    
   
